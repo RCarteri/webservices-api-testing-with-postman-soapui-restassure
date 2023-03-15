@@ -1,0 +1,15 @@
+RestAssured
+-------------
+Parsing XML Response
+----------
+
+http://restapi.adequateshop.com/api/Traveler?page=1
+
+File upload /download
+---
+
+How to Run fileupload API
+---------
+Open command prompt , tehn run below command
+
+java - jar file-upload-RestAPI.jar

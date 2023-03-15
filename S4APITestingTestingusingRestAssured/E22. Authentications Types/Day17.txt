@@ -1,0 +1,205 @@
+Authorizations
+-----------------
+
+Authentication-  valid or not
+Authorization - access
+
+Basic
+Digest
+Preempive
+
+
+Bearer token
+oauth 1.0, 2.0 
+API Key
+
+
+https://api.openweathermap.org/data/2.5/forecast/daily?q=Delhi&units=metric&cnt=7
+
+
+Faker   library     https://github.com/DiUS/java-faker
+
+JSON Object           
+
+ {
+
+
+}
+
+
+JSON Array
+[
+
+]
+
+JSON Element
+
+
+
+
+
+{
+    "book": [
+        {
+            "author": "Nigel Rees",
+            "category": "reference",
+            "price": 8.95,
+            "title": "Sayings of the Century"
+        },
+        {
+            "author": "Evelyn Waugh",
+            "category": "fiction",
+            "price": 12.99,
+            "title": "Sword of Honour"
+        },
+        {
+            "author": "Herman Melville",
+            "category": "fiction",
+            "isbn": "0-553-21311-3",
+            "price": 8.99,
+            "title": "Moby Dick"
+        },
+        {
+            "author": "J. R. R. Tolkien",
+            "category": "fiction",
+            "isbn": "0-395-19395-8",
+            "price": 22.99,
+            "title": "The Lord of the Rings"
+        }
+    ]
+}
+
+JSON Object --JSONArray--- JSON Objects
+
+jo.getJSONArray("book").getJSONObject(i).get("title")
+jo.getJSONArray("book").getJSONObject(3).get("author")
+
+
+---------------------------
+
+[
+    {
+        "id": 1,
+        "first_name": "Donald",
+        "last_name": "OConnell",
+        "email": "Donald@gmail.com",
+        "gender": "Male"
+    },
+    {
+        "id": 2,
+        "first_name": "Steve",
+        "last_name": "smith",
+        "email": "steve@gmail.com",
+        "gender": "Male"
+    },
+    {
+        "id": 3,
+        "first_name": "virat",
+        "last_name": "kohli",
+        "email": "virat@gmail.com",
+        "gender": "Male"
+    },
+    {
+        "id": 4,
+        "first_name": "Shelley",
+        "last_name": "Higgins",
+        "email": "Shelley@gmail.com",
+        "gender": "Female"
+    },
+    {
+        "id": 5,
+        "first_name": "William",
+        "last_name": "Gietz",
+        "email": "William@gmail.com",
+        "gender": "Male"
+    },
+    {
+        "id": 6,
+        "first_name": "Steven",
+        "last_name": "King",
+        "email": "Steven@gmail.com",
+        "gender": "Male"
+    },
+    {
+        "id": 7,
+        "first_name": "Bruce",
+        "last_name": "Ernst",
+        "email": "Bruce@gmail.com",
+        "gender": "Male"
+    },
+    {
+        "id": 8,
+        "first_name": "Shelli",
+        "last_name": "Baida",
+        "email": "Shelli@gmail.com",
+        "gender": "Female"
+    },
+    {
+        "id": 9,
+        "first_name": "Shanta",
+        "last_name": "Vollman",
+        "email": "Shanta@gmail.com",
+        "gender": "Female"
+    },
+    {
+        "id": 10,
+        "first_name": "Laura",
+        "last_name": "Bissot",
+        "email": "Laura@gmail.com",
+        "gender": "Female"
+    }
+]
+
+
+JSONArray--->JSON Objects
+ 
+JSONArray jarr=new JSONArray(res.asString());
+jarr.getJSONObject(2).get("first_name")
+
+
+============================================================
+
+[
+    {
+        "id": 1,
+        "name": "John",
+        "location": "india",
+        "phone": "1234567890",
+        "courses": [
+            "Java",
+            "Selenium"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Kim",
+        "location": "US",
+        "phone": "98876543213",
+        "courses": [
+            "Python",
+            "Appium"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Smith",
+        "location": "Canada",
+        "phone": "165498765",
+        "courses": [
+            "C#",
+            "RestAPI"
+        ]
+    }
+]
+
+
+JSONArray--->JSONObjects
+
+
+JSONArray jrr=new JSONArray(res.asString());
+
+jrr.getJSONObject(0).getJSONArray("courses").get(1);    -- selenium
+
+
+
+

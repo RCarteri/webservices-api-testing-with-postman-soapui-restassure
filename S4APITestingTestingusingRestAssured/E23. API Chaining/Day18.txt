@@ -1,0 +1,7 @@
+RestAssured
+------------
+Chaining
+
+GoRest
+-----
+create user--> get user--> update user--> delete user

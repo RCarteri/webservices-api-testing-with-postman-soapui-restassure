@@ -1,0 +1,21 @@
+RestAssured
+-------------
+1) Path & Query parameters
+
+https://reqres.in/api/users?page=2
+https://reqres.in/api/users?page=2&id=5
+
+
+cookies and headers
+
+Header      header name: value
+
+Headers  
+			 header name: value
+ 			header name: value
+ 		header name: value
+
+log()
+
+
+
